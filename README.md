@@ -30,3 +30,7 @@ https://whimsical.com/bar-map-LofCLdDEpM7isKwnfVD5B
 ## Wireframe
 
 https://whimsical.com/bar-map-wireframe-QR1QdzXmE4Ww7DtCHKvgfa
+
+## 設計稿
+
+https://www.figma.com/file/ht3t1z33KinfSZuuFN0KeS/Bar-Map
