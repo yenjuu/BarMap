@@ -1,93 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Index</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="./assets/style/all.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute">
+      <div class="container">
+        <h1>
+          <a class="navbar-brand navbar-logo" href="index.html">BarMap</a>
+        </h1>
+        <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#">首頁</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#">酒吧推薦</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
+            <li class="nav-item"><a href="#" class="nav-link">酒吧搜尋</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">活動資訊</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">調酒知識</a></li>
           </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
         </div>
       </div>
     </nav>
 
     
-<div class="container">
-  <h1 class="index__h1">這是一段話</h1>
-  <div class="alert alert-primary" role="alert">A simple primary alert—check it out!</div>
-  <div class="alert alert-secondary" role="alert">A simple secondary alert—check it out!</div>
-  <div class="alert alert-success" role="alert">A simple success alert—check it out!</div>
-  <div class="alert alert-danger" role="alert">A simple danger alert—check it out!</div>
-  <div class="alert alert-warning" role="alert">A simple warning alert—check it out!</div>
-  <div class="alert alert-info" role="alert">A simple info alert—check it out!</div>
-  <div class="alert alert-light" role="alert">A simple light alert—check it out!</div>
-  <div class="alert alert-dark" role="alert">A simple dark alert—check it out!</div>
-</div>
-
-<!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Launch demo modal</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<section class="hero-banner d-flex align-items-center">
+  <div class="container text-center">
+    <h2 class="text-primary">你最佳的酒吧搜尋器</h2>
+    <form action="post">
+      <div class="row">
+        <div class="col-10">
+          <input class="form-control opacity-75" type="text" name="barName" id="barName" placeholder="請輸入店名" />
+        </div>
+        <button class="col-2 btn btn-primary" type="submit">搜尋</button>
       </div>
-      <div class="modal-body">...</div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+    </form>
   </div>
-</div>
+</section>
+<section class="banner">
+  <div class="containe text-center">
+    <p class="text-white">每個來到這裡的人<br />都有屬於他們的故事<br />而我們希望<br />能幫你找到配上這故事的酒</p>
+  </div>
+</section>
 
 
-    <footer class="footer">
-      footer
+    <footer class="footer bg-secondary-dark opacity-90 text-white pt-6 pb-4 text-center">
+      <div class="container">
+        <ul class="d-flex justify-content-center">
+          <li class="pe-2 me-2 border-end"><a href="index.html" class="nav-link">HOME</a></li>
+          <li class="pe-2 me-2 border-end"><a href="#" class="nav-link">SEARCH</a></li>
+          <li><a href="#" class="nav-link">LOGOUT</a></li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center mt-6 mb-80">
+          <span class="material-icons material-icons-outlined fs-1"> email </span>
+          <input class="form-control opacity-75 ms-2 me-2" type="email" name="mail" id="mail" placeholder="email" aria-label="mail" aria-describedby="mail" />
+          <input class="btn btn-primary" type="submit" value="Send" />
+        </div>
+        <p>Copyright © 2022 Bar Map. All rights reserved.</p>
+      </div>
     </footer>
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
   </body>
-
 </html>
