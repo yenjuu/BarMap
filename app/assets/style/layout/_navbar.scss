@@ -1,0 +1,14 @@
+.navbar .navbar-toggler-icon {
+  color: $primary;
+}
+
+.navbar-logo{
+  background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/logo.png?raw=true");
+  background-size: cover;
+  display: block;
+  width: 140px;
+  height: 40px;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+}
