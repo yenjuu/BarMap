@@ -12580,6 +12580,10 @@ ul {
   opacity: 0.9;
 }
 
+.lh-40 {
+  line-height: 80px !important;
+}
+
 .navbar .navbar-toggler-icon {
   color: #FF729C;
 }
