@@ -1,3 +1,21 @@
 .opacity-90{
   opacity: 0.9;
 }
+.lh-40{
+  line-height: 80px !important;
+}
+
+.w-558{
+  max-width: 558px;
+}
+
+.bg-img{
+  background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/background.png?raw=true");
+  background-size: contain;
+}
+
+.bg-outline-primary{
+  background: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+}

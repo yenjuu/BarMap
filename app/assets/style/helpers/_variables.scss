@@ -258,11 +258,12 @@ $spacers: (
   0:  0,
   1:  $spacer * .25,
   2:  $spacer * .5,
-  3:  $spacer,
-  4:  $spacer * 1.5,
-  5:  $spacer * 2,
-  6:  $spacer * 2.5,
-  7:  $spacer * 3,
+  3:  $spacer * .75,
+  4:  $spacer,
+  5:  $spacer * 1.5,
+  6:  $spacer * 2,
+  7:  $spacer * 2.5,
+  8:  $spacer * 3,
   80: $spacer * 5,
 ) !default;
 
@@ -340,7 +341,7 @@ $container-max-widths: (
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  // xxl: 1320px
 ) !default;
 // scss-docs-end container-max-widths
 
@@ -454,8 +455,8 @@ $h1-font-size:                $font-size-base * 2.5 !default;
 $h2-font-size:                $font-size-base * 1.75 !default; //2 !default;
 $h3-font-size:                $font-size-base * 1.5 !default;  //1.75 !default;
 $h4-font-size:                $font-size-base * 1.25 !default; //1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h5-font-size:                $font-size-base !default;
+$h6-font-size:                $font-size-base * 0.75 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes

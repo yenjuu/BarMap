@@ -1,0 +1,9 @@
+.btn-primary{
+  color: $white;
+  &:hover{
+    border: 1px solid $base;
+  }
+}
+.btn-secondary{
+  color: $white;
+}

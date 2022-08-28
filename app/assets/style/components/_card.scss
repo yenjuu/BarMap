@@ -1,0 +1,18 @@
+.card{
+  margin: 0 12px;
+  padding: 0;
+  color: $white;
+}
+.card-body{
+  // background-color: $primary;
+  
+}
+// TODO: border增加螢光的效果
+.card-primary{
+  background-color: rgba($primary,0.2);
+  border: 1px solid $primary;
+}
+.card-secondary{
+  background-color: rgba($secondary,0.2);
+  border: 1px solid $secondary;
+}
