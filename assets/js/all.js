@@ -1,5 +1,10 @@
 "use strict";
 
+$(document).on("scroll", function () {
+  console.log("scrolling");
+  console.log($(".navbar").toggleClass($(this).scrollTop()));
+  $(".navbar").toggleClass("scrolled", $(this).scrollTop() > $(".navbar").height());
+});
 var swiper = new Swiper(".swiper", {
   slidesPerView: 4,
   spaceBetween: 24,
