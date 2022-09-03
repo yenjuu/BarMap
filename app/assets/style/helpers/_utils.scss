@@ -11,12 +11,14 @@
 
 .bg-img{
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/background.png?raw=true");
-  background-size: contain;
-  // FIXME: 圖片重複中間會有線
+  background-size: cover;
 }
 
 .bg-outline-primary{
   background: transparent;
   border: 1px solid $primary;
   color: $primary;
+}
+.overflowX-hidden{
+  overflow-x: hidden;
 }

@@ -3,11 +3,14 @@
 @import "../../../node_modules/bootstrap/scss/functions";
 @import "./helpers/variables";
 @import "../../../node_modules/bootstrap/scss/bootstrap";
+
 @import "./base/base";
 @import "./helpers/utils";
+
 @import "./components/card";
 @import "./components/button";
 @import "./components/star";
+@import "./components/swipper";
 
 @import "./layout/navbar";
 @import "./layout/banner";

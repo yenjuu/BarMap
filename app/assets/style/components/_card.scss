@@ -1,18 +1,26 @@
-.card{
+.card {
   margin: 0 12px;
   padding: 0;
   color: $white;
 }
 // .card-body{
 //   // background-color: $primary;
-  
+
 // }
-// TODO: border增加螢光的效果
-.card-primary{
-  background-color: rgba($primary,0.2);
-  border: 1px solid $primary;
+.card {
+  // FIXME: 暫時將圖片縮小不檔到box shadow
+  padding: 5px;
 }
-.card-secondary{
-  background-color: rgba($secondary,0.2);
+.card-primary {
+  background-color: rgba($primary, 0.2);
+  border: 1px solid $primary; //rgba($primary, 0.9);
+  box-shadow: 0px 0px 5px $primary, 0px 0px 5px $primary inset;
+  // FIXME: 陰影蓋不過img
+  // position: relative;
+  // z-index: 99;
+}
+.card-secondary {
+  background-color: rgba($secondary, 0.2);
   border: 1px solid $secondary;
+  box-shadow: 0px 0px 5px $secondary, 0px 0px 5px $secondary inset;
 }

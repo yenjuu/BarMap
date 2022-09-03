@@ -57,46 +57,111 @@ current: index
 <section class="bg-img pt-80 pb-80">
   <div class="container">
     <h2 class="text-white text-center">熱門推薦</h2>
-    <div class="row flex-nowrap">
-      <!-- FIXME: 多出去的卡片要消失 -->
-      <div class="card card-primary col-4">
-        <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">D Town by A Train</h5>
-          <div class="d-flex align-items-center mb-4">
-            <!-- FIXME: 星星評分自己刻 -->
-            <fieldset class="rating">
+    <!-- <div class="row flex-nowrap overflow-hidden"> -->
+    <!-- FIXME: 添加swipper -->
+    <!-- <div class="card card-primary col-4"> -->
+    <!-- <img src="./assets/images/store1.png" class="card-img-top" alt="..." /> -->
+    <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">D Town by A Train</h5> -->
+    <!-- <div class="d-flex align-items-center mb-4"> -->
+    <!-- FIXME: 星星評分自己刻 -->
+    <!-- <fieldset class="rating"> -->
+    <!-- <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label> <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label> -->
+    <!-- <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label> <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label> -->
+    <!-- <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label> <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label> -->
+    <!-- <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label> <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label> -->
+    <!-- <input t ype="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label> <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label> -->
+    <!-- </fieldset> -->
+    <!-- <span class="badge bg-outline-primary rounded-0 ms-1">營業中</span> -->
+    <!-- </div> -->
+    <!-- <div class=""> -->
+    <!-- <div class="card-text fs-6">結束營業時間: 14:00</div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="card card-secondary col-4"> -->
+    <!-- <img src="./assets/images/store1.png" class="card-img-top" alt="..." /> -->
+    <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">D Town by A Train</h5> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="card card-primary col-4"> -->
+    <!-- <img src="./assets/images/store1.png" class="card-img-top" alt="..." /> -->
+    <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">D Town by A Train</h5> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- <div class="card card-secondary col-4"> -->
+    <!-- <img src="./assets/images/store1.png" class="card-img-top" alt="..." /> -->
+    <!-- <div class="card-body"> -->
+    <!-- <h5 class="card-title">D Town by A Train</h5> -->
+    <!-- </div> -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- swiper -->
+    <div class="swiper pt-7 pb-7 position-relative">
+      <div class="swiper-wrapper">
+        <div class="card card-primary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <!-- <div class="d-flex align-items-center mb-4"> -->
+            <!-- <fieldset class="rating">
               <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label> <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
               <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label> <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
               <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label> <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
               <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label> <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
               <input t ype="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label> <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-            </fieldset>
-            <span class="badge bg-outline-primary rounded-0 ms-1">營業中</span>
-          </div>
-          <div class="">
-            <div class="card-text fs-6">結束營業時間: 14:00</div>
+            </fieldset> -->
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
           </div>
         </div>
-      </div>
-      <div class="card card-secondary col-4">
-        <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">D Town by A Train</h5>
+        <div class="card card-secondary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+          </div>
+        </div>
+        <div class="card card-primary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+          </div>
+        </div>
+        <div class="card card-secondary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top1" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+          </div>
+        </div>
+        <div class="card card-primary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+          </div>
+        </div>
+        <div class="card card-secondary swiper-slide">
+          <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">D Town by A Train</h5>
+            <span class="badge bg-outline-primary rounded-0">營業中</span>
+            <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+          </div>
         </div>
       </div>
-      <div class="card card-primary col-4">
-        <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">D Town by A Train</h5>
-        </div>
-      </div>
-      <div class="card card-secondary col-4">
-        <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-        <div class="card-body">
-          <h5 class="card-title">D Town by A Train</h5>
-        </div>
-      </div>
+      <div class="swiper-pagination position-absolute bottom-0"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
     </div>
   </div>
 </section>

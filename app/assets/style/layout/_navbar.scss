@@ -2,7 +2,7 @@
   color: $primary;
 }
 
-.navbar-logo{
+.navbar-logo {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/logo.png?raw=true");
   background-size: cover;
   display: block;
@@ -11,4 +11,9 @@
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+.nav-link:hover {
+  color: $primary;
+  filter: drop-shadow(0px 0px 5px $primary);
+  font-weight: 700;
 }
