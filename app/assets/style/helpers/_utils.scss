@@ -1,24 +1,46 @@
-.opacity-90{
+.mb-64 {
+  margin-bottom: 64px;
+}
+
+.opacity-90 {
   opacity: 0.9;
 }
-.lh-40{
+.lh-40 {
   line-height: 80px !important;
 }
 
-.w-558{
+.w-558 {
   max-width: 558px;
 }
+.w-644 {
+  max-width: 644px;
+}
+.h-162 {
+  max-height: 162px;
+}
 
-.bg-img{
+.top-16 {
+  top: 16px;
+}
+.end-16 {
+  right: 16px;
+}
+
+.bg-img {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/background.png?raw=true");
   background-size: cover;
 }
 
-.bg-outline-primary{
+.bg-outline-primary {
   background: transparent;
   border: 1px solid $primary;
   color: $primary;
 }
-.overflowX-hidden{
+.bg-highlight {
+  color: $base;
+  max-width: fit-content;
+  border-radius: 0px;
+}
+.overflowX-hidden {
   overflow-x: hidden;
 }

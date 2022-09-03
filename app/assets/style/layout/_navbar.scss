@@ -1,7 +1,17 @@
-.navbar .navbar-toggler-icon {
-  color: $primary;
+.navbar-toggler {
+  border: 0;
+  .navbar-toggler-icon{
+    color: $primary !important;  //FIXME: 顏色改不掉
+    opacity: initial;
+  }
+  &:focus{
+    box-shadow: none;
+  }
 }
-
+.navbar.scrolled{
+  background: rgba($base, .9) !important;
+  transition: 0.5s;
+}
 .navbar-logo {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/logo.png?raw=true");
   background-size: cover;

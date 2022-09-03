@@ -9,13 +9,17 @@
   height: auto;
   object-fit: cover; // 防止圖片變形
 }
-
+// TODO: 整理一下這段
 .swiper-button-prev:after,
 .swiper-button-next:after {
   color: white;
   opacity: 0.2;
 }
-
+.swiper-button-prev:hover:after,
+.swiper-button-next:hover:after {
+  opacity: 1;
+  filter: drop-shadow(0px 0px 7px $white);
+}
 
 .swiper-pagination {
   .swiper-pagination-bullet {
@@ -23,21 +27,14 @@
     opacity: initial;
     border-radius: 5px;
     width: 10px;
-    height: 5px;
+    height: 8px;
     box-shadow: 0px 0px 7px $primary;
     &-active {
       width: 124px;
+      height: 5px;
     }
   }
 }
-
-// .swiper-pagination-bullet-active {
-//   width: 124px;
-//   // TODO: 如果可以的話加上swiper pagination 變長的動畫
-//   // transform: scaleX(2);
-//   // animation-name: pagination;
-//   // animation-duration: 2 s;
-// }
 
 @keyframes pagination {
   0% {
