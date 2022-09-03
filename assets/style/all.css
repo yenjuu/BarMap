@@ -12947,7 +12947,7 @@ caption {
 
 .bg-img {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/background.png?raw=true");
-  background-size: contain;
+  background-size: cover;
 }
 
 .bg-outline-primary {
@@ -12956,20 +12956,30 @@ caption {
   color: #FF729C;
 }
 
+.overflowX-hidden {
+  overflow-x: hidden;
+}
+
 .card {
   margin: 0 12px;
   padding: 0;
   color: #fff;
 }
 
+.card {
+  padding: 5px;
+}
+
 .card-primary {
   background-color: rgba(255, 114, 156, 0.2);
   border: 1px solid #FF729C;
+  box-shadow: 0px 0px 5px #FF729C, 0px 0px 5px #FF729C inset;
 }
 
 .card-secondary {
   background-color: rgba(131, 85, 228, 0.2);
   border: 1px solid #8355E4;
+  box-shadow: 0px 0px 5px #8355E4, 0px 0px 5px #8355E4 inset;
 }
 
 .btn-primary {
@@ -13032,6 +13042,60 @@ fieldset, label {
   color: #FFED85;
 }
 
+.swiper {
+  width: 100%;
+}
+
+.swiper img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  color: white;
+  opacity: 0.2;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #FF729C;
+  opacity: initial;
+  border-radius: 5px;
+  width: 10px;
+  height: 5px;
+  box-shadow: 0px 0px 7px #FF729C;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  width: 124px;
+}
+
+@-webkit-keyframes pagination {
+  0% {
+    width: 10px;
+  }
+  50% {
+    width: 62px;
+  }
+  100% {
+    width: 124px;
+  }
+}
+
+@keyframes pagination {
+  0% {
+    width: 10px;
+  }
+  50% {
+    width: 62px;
+  }
+  100% {
+    width: 124px;
+  }
+}
+
 .navbar .navbar-toggler-icon {
   color: #FF729C;
 }
@@ -13045,6 +13109,12 @@ fieldset, label {
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.nav-link:hover {
+  color: #FF729C;
+  filter: drop-shadow(0px 0px 5px #FF729C);
+  font-weight: 700;
 }
 
 .hero-banner {
