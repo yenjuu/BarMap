@@ -1,7 +1,6 @@
 .mb-64 {
   margin-bottom: 64px;
 }
-
 .opacity-90 {
   opacity: 0.9;
 }
@@ -18,12 +17,8 @@
 .h-162 {
   max-height: 162px;
 }
-
-.top-16 {
-  top: 16px;
-}
-.end-16 {
-  right: 16px;
+.row {
+  margin: 0;
 }
 
 .bg-img {
@@ -41,6 +36,38 @@
   max-width: fit-content;
   border-radius: 0px;
 }
-.overflowX-hidden {
-  overflow-x: hidden;
+
+// ==================== RWD ====================
+@include media-breakpoint-up(xs) {
+  // font size
+  .fs-sm-6 {
+    font-size: 12px;
+  }
+  .fs-sm-7{
+    font-size: 8px;
+  }
+  // position
+  .top-8 {
+    top: 8px;
+  }
+  .end-8 {
+    right: 8px;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  //font size
+  .fs-md-5{
+    font-size: 16px;
+  }
+  .fs-md-6{
+    font-size: 12px;
+  }
+  // position
+  .top-md-16 {
+    top: 16px;
+  }
+  .end-md-16 {
+    right: 16px;
+  }
 }

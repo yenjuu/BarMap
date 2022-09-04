@@ -1,15 +1,21 @@
+.navbar > .container {
+  @media (max-width: 768px) {
+    max-width: 720px;
+  }
+}
+
 .navbar-toggler {
   border: 0;
-  .navbar-toggler-icon{
-    color: $primary !important;  //FIXME: 顏色改不掉
+  .navbar-toggler-icon {
+    color: $primary !important; //FIXME: 顏色改不掉
     opacity: initial;
   }
-  &:focus{
+  &:focus {
     box-shadow: none;
   }
 }
-.navbar.scrolled{
-  background: rgba($base, .9) !important;
+.navbar.scrolled {
+  background: rgba($base, 0.95) !important;
   transition: 0.5s;
 }
 .navbar-logo {
@@ -23,7 +29,9 @@
   white-space: nowrap;
 }
 .nav-link:hover {
-  color: $primary;
-  filter: drop-shadow(0px 0px 5px $primary);
-  font-weight: 700;
+  color: $white;
+  border-radius: 5px;
+  text-shadow: -0.2rem -0.2rem 0.5rem #fff, 0.2rem 0.2rem 0.5rem #fff, 0 0 1rem $base, 0 0 2rem $base;//, 0 0 4rem $primary, 0 0 6rem $primary, 0 0 8rem $primary;
+  box-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #fff inset, 0 0 0.25rem $secondary inset, 0 0 0.5rem $secondary inset,0 0 0.25rem $secondary , 0 0 0.5rem $secondary;
+
 }

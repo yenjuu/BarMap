@@ -9,11 +9,15 @@
 // }
 .card {
   // FIXME: 暫時將圖片縮小不檔到box shadow
-  padding: 5px;
+  padding: 8px;
 }
 .card-header {
-  // background-color: rgba($primary, 0.8);
+  background-color: rgba($primary, 0);
+  padding: 0;
   border-bottom: 0;
+}
+.card-body{
+  padding:0;
 }
 .card-primary {
   background-color: rgba($primary, 0.8);

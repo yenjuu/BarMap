@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top scrolled">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container">
         <h1>
           <a class="navbar-brand navbar-logo" href="index.html">BarMap</a>
@@ -21,17 +21,25 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- FIXME: navbar 展開時增加底色 -->
+        <!-- FIXME: 縮到375的時候 header太長導致x軸? -->
         <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
           <ul class="navbar-nav mb-2 mb-lg-0 text-center">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">首頁</a>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              <!-- <a class="nav-link active" aria-current="page" href="index.html">首頁</a> -->
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">酒吧推薦</a>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="suggest.html">酒吧推薦</a>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">酒吧搜尋</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">活動資訊</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">調酒知識</a></li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="search.html">酒吧搜尋</a>
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="#">活動資訊</a>
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="#">調酒知識</a>
+            </li>
           </ul>
         </div>
         <!-- <div class="position-relative"></div> -->
@@ -43,9 +51,9 @@
     <footer class="footer bg-secondary-dark text-white pt-6 pb-4 text-center">
       <div class="container w-558">
         <ul class="d-flex justify-content-center">
-          <li class="pe-2 me-2 border-end"><a href="index.html" class="nav-link">HOME</a></li>
-          <li class="pe-2 me-2 border-end"><a href="#" class="nav-link">SEARCH</a></li>
-          <li><a href="#" class="nav-link">LOGOUT</a></li>
+          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="index.html">HOME</a></li>
+          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="#">SEARCH</a></li>
+          <li><a class="nav-link p-1 ps-2 pe-2" href="#">LOGOUT</a></li>
         </ul>
         <div class="d-flex justify-content-center align-items-center mt-6 mb-80">
           <span class="material-icons material-icons-outlined fs-1"> email </span>

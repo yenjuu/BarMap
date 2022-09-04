@@ -1,8 +1,19 @@
 $(document).on("scroll", function () {
-  console.log("scrolling");
-  console.log($(".navbar").toggleClass($(this).scrollTop()));
-  $(".navbar").toggleClass("scrolled", $(this).scrollTop() > $(".navbar").height());
+  // console.log("scrolling");
+  // console.log($(".navbar").toggleClass($(this).scrollTop()));
+  $(".navbar").toggleClass("scrolled", $(this).scrollTop() > $(".navbar").height()*2);
 });
+
+// $(".navbar-collapse").on("shown.bs.collapse", function (event) {
+//   console.log('show');
+//   $(".navbar-collapse").removeClass("bg-transparent");
+//   $(".navbar-collapse").addClass("bg-base");
+// });
+// $(".navbar-collapse").on("hidden.bs.collapse", function (event) {
+//   console.log("hidden");
+//   $(".navbar-collapse").removeClass("bg-base");
+//   $(".navbar-collapse").addClass("bg-transparent");
+// });
 
 var swiper = new Swiper(".swiper", {
   slidesPerView: 4,
