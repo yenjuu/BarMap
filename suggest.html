@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Index</title>
+    <title>Suggest</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -47,57 +47,6 @@
     </nav>
 
     
-<section class="hero-banner d-flex align-items-center">
-  <div class="container text-center w-558">
-    <h2 class="fs-1 text-primary">你最佳的酒吧搜尋器</h2>
-    <form action="post">
-      <div class="row pe-3 mb-5">
-        <div class="col-8 offset-2">
-          <input class="form-control opacity-75" type="text" name="barName" id="barName" placeholder="請輸入店名" />
-        </div>
-        <!-- TODO: 文字換成icon? -->
-        <button class="col-1 btn btn-primary btn-sm" type="submit">
-          <span class="material-icons material-icons-rounded align-middle"> search </span>
-        </button>
-      </div>
-      <div class="row">
-        <div class="col-3 text-start offset-2">
-          <label class="fs-6 text-white" for="place"> 地點 </label>
-          <select class="form-select opacity-75" name="place" id="place">
-            <option value="taipei">台北</option>
-            <option value="taipei">台中</option>
-            <option value="taipei">台南</option>
-          </select>
-        </div>
-        <div class="col-3 text-start">
-          <label class="fs-6 text-white" for="suggestScore"> 推薦指數 </label>
-          <select class="form-select opacity-75" name="suggestScore" id="suggestScore">
-            <option value="5">5.0</option>
-            <option value="4">4.0</option>
-            <option value="3">3.0</option>
-            <option value="2">2.0</option>
-            <option value="1">1.0</option>
-          </select>
-        </div>
-        <div class="col-3 text-start">
-          <label class="fs-6 text-white" for="priceScore"> 價格親切 </label>
-          <select class="form-select opacity-75" name="priceScore" id="priceScore">
-            <option value="5">5.0</option>
-            <option value="4">4.0</option>
-            <option value="3">3.0</option>
-            <option value="2">2.0</option>
-            <option value="1">1.0</option>
-          </select>
-        </div>
-      </div>
-    </form>
-  </div>
-</section>
-<section class="banner d-flex align-items-center">
-  <div class="container text-center">
-    <p class="text-white fs-3 fw-normal lh-40 opacity-75">每個來到這裡的人<br />都有屬於他們的故事<br />而我們希望<br />能幫你找到配上這故事的酒</p>
-  </div>
-</section>
 <section class="bg-img pt-80 pb-80">
   <div class="container">
     <div>
@@ -156,20 +105,19 @@
     <h2 class="text-white text-center mt-80 mb-7">最近活動</h2>
     <ul>
       <li class="mb-64">
-        <!-- FIXME: card RWD -->
         <div class="card card-primary">
-          <span class="badge d-block bg-highlight position-absolute top-8 end-8 top-md-16 end-md-16 fs-sm-7 fs-md-6">NEW</span>
-          <div class="row fs-sm-6 fs-md-5">
-            <div class="col-4">
+          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
+          <div class="row">
+            <div class="col-md-4">
               <div class="card-header">
                 <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1 fs-sm-6 fs-md-5">D Town by A Train</h5>
+                <h5 class="mt-1">D Town by A Train</h5>
               </div>
             </div>
-            <div class="col-8">
-              <div class="card-body align-middle">
+            <div class="col-md-8">
+              <div class="card-body">
                 <ul>
-                  <li class="">
+                  <li>
                     <p>活動主題: XXXX聯名特調</p>
                   </li>
                   <li>
@@ -185,19 +133,19 @@
         </div>
       </li>
       <li class="mb-64">
-        <div class="card card-primary">
-          <span class="badge d-block bg-highlight position-absolute top-8 end-8 top-md-16 end-md-16 fs-sm-7 fs-md-6">NEW</span>
-          <div class="row fs-sm-6 fs-md-5">
-            <div class="col-4">
+        <div class="card card-primary position-relative">
+          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
+          <div class="row">
+            <div class="col-md-4">
               <div class="card-header">
                 <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1 fs-sm-6 fs-md-5">D Town by A Train</h5>
+                <h5 class="mt-1">D Town by A Train</h5>
               </div>
             </div>
-            <div class="col-8 d-flex">
-              <div class="card-body align-items-center">
+            <div class="col-md-8">
+              <div class="card-body">
                 <ul>
-                  <li class="">
+                  <li>
                     <p>活動主題: XXXX聯名特調</p>
                   </li>
                   <li>
@@ -213,19 +161,19 @@
         </div>
       </li>
       <li class="mb-64">
-        <div class="card card-primary">
-          <span class="badge d-block bg-highlight position-absolute top-8 end-8 top-md-16 end-md-16 fs-sm-7 fs-md-6">NEW</span>
-          <div class="row fs-sm-6 fs-md-5">
-            <div class="col-4">
+        <div class="card card-primary position-relative">
+          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
+          <div class="row">
+            <div class="col-md-4">
               <div class="card-header">
                 <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1 fs-sm-6 fs-md-5">D Town by A Train</h5>
+                <h5 class="mt-1">D Town by A Train</h5>
               </div>
             </div>
-            <div class="col-8">
-              <div class="card-body align-middle">
+            <div class="col-md-8">
+              <div class="card-body">
                 <ul>
-                  <li class="">
+                  <li>
                     <p>活動主題: XXXX聯名特調</p>
                   </li>
                   <li>

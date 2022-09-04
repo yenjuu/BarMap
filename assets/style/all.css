@@ -9015,6 +9015,10 @@ fieldset:disabled .btn {
   font-size: 0.75rem !important;
 }
 
+.fs-7 {
+  font-size: 0.5rem !important;
+}
+
 .fst-italic {
   font-style: italic !important;
 }
@@ -12957,12 +12961,8 @@ caption {
   max-height: 162px;
 }
 
-.top-16 {
-  top: 16px;
-}
-
-.end-16 {
-  right: 16px;
+.row {
+  margin: 0;
 }
 
 .bg-img {
@@ -12984,8 +12984,35 @@ caption {
   border-radius: 0px;
 }
 
-.overflowX-hidden {
-  overflow-x: hidden;
+.fs-sm-6 {
+  font-size: 12px;
+}
+
+.fs-sm-7 {
+  font-size: 8px;
+}
+
+.top-8 {
+  top: 8px;
+}
+
+.end-8 {
+  right: 8px;
+}
+
+@media (min-width: 768px) {
+  .fs-md-5 {
+    font-size: 16px;
+  }
+  .fs-md-6 {
+    font-size: 12px;
+  }
+  .top-md-16 {
+    top: 16px;
+  }
+  .end-md-16 {
+    right: 16px;
+  }
 }
 
 .card {
@@ -12995,11 +13022,17 @@ caption {
 }
 
 .card {
-  padding: 5px;
+  padding: 8px;
 }
 
 .card-header {
+  background-color: rgba(255, 114, 156, 0);
+  padding: 0;
   border-bottom: 0;
+}
+
+.card-body {
+  padding: 0;
 }
 
 .card-primary {
@@ -13159,6 +13192,12 @@ fieldset, label {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar > .container {
+    max-width: 720px;
+  }
+}
+
 .navbar-toggler {
   border: 0;
 }
@@ -13173,7 +13212,7 @@ fieldset, label {
 }
 
 .navbar.scrolled {
-  background: rgba(9, 9, 9, 0.9) !important;
+  background: rgba(9, 9, 9, 0.95) !important;
   transition: 0.5s;
 }
 
@@ -13189,9 +13228,10 @@ fieldset, label {
 }
 
 .nav-link:hover {
-  color: #FF729C;
-  filter: drop-shadow(0px 0px 5px #FF729C);
-  font-weight: 700;
+  color: #fff;
+  border-radius: 5px;
+  text-shadow: -0.2rem -0.2rem 0.5rem #fff, 0.2rem 0.2rem 0.5rem #fff, 0 0 1rem #090909, 0 0 2rem #090909;
+  box-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #fff inset, 0 0 0.25rem #8355E4 inset, 0 0 0.5rem #8355E4 inset, 0 0 0.25rem #8355E4, 0 0 0.5rem #8355E4;
 }
 
 .hero-banner {
