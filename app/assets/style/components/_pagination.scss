@@ -1,0 +1,15 @@
+.page-link {
+  border: 0;
+    background: transparent;
+  &:hover {
+    background-color: rgba($primary, 0);
+    color: $primary;
+    text-shadow: 0rem 0rem 1rem $white,0rem 0rem 2rem $white;//, 0 0 2rem $base, 0 0 4rem $base; //, 0 0 4rem $primary, 0 0 6rem $primary, 0 0 8rem $primary;
+    // box-shadow: 0 0 0.1rem #fff, 0 0 0.2rem #fff inset, 0 0 0.25rem $secondary inset, 0 0 0.5rem $secondary inset, 0 0 0.25rem $secondary, 0 0 0.5rem $secondary;
+    transition: 0.3s;
+  }
+  &:active{
+    background: transparent;
+  }
+}
+// FIXME: 點擊後背景移除

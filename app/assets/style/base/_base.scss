@@ -8,6 +8,11 @@ ul {
   padding: 0;
 }
 
-caption{
+caption {
   color: $white;
+}
+
+a {
+  // color: $white !important;
+  text-decoration: none;
 }

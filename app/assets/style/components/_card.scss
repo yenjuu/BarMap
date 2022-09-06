@@ -10,53 +10,50 @@
 .card {
   // FIXME: 暫時將圖片縮小不檔到box shadow
   padding: 8px;
+  &:hover {
+    .card-img-top {
+      transform: scale(1.1);
+      transition: 0.5s;
+    }
+  }
 }
 .card-header {
   background-color: rgba($primary, 0);
   padding: 0;
   border-bottom: 0;
+  overflow: hidden;
 }
-.card-body{
-  padding:0;
+.card-body {
+  padding: 0;
+  padding-top: 16px;
 }
+
 .card-primary {
   background-color: rgba($primary, 0.8);
-  // box-shadow: 0px 0px 5px $primary, 0px 0px 5px $primary inset;
+  &:hover {
+    box-shadow: 0px 0px 25px $primary;
+  }
   // FIXME: 陰影蓋不過img
-  // position: relative;
-  // z-index: 99;
   &-transparent {
     background-color: rgba($primary, 0.2);
     border: 1px solid $primary;
     box-shadow: 0px 0px 5px $primary, 0px 0px 5px $primary inset;
     &:hover {
-      box-shadow: 0px 0px 25px rgba($primary, 0.75), 0px 0px 5px $primary inset;
+      box-shadow: 0px 0px 25px rgba($primary, 0.75), 0px 0px 5px $primary inset, 0px 0px 3px $primary inset, 0px 0px 3px $primary, 0px 0px 2px $primary inset, 0px 0px 2px $primary;
     }
-  }
-  &:hover {
-    box-shadow: 0px 0px 25px rgba($primary, 0.75);
   }
 }
 .card-secondary {
   background-color: rgba($secondary, 0.8);
-  // box-shadow: 0px 0px 5px $secondary, 0px 0px 5px $secondary inset;
-  // FIXME: 陰影蓋不過img
-  // position: relative;
-  // z-index: 99;
+  &:hover {
+    box-shadow: 0px 0px 25px $secondary;
+  }
   &-transparent {
     background-color: rgba($secondary, 0.2);
     border: 1px solid $secondary;
     box-shadow: 0px 0px 5px $secondary, 0px 0px 5px $secondary inset;
     &:hover {
-      box-shadow: 0px 0px 25px rgba($secondary, 0.75), 0px 0px 5px $secondary inset;
+      box-shadow: 0px 0px 25px rgba($secondary, 0.75), 0px 0px 5px $secondary inset, 0px 0px 3px $secondary inset, 0px 0px 3px $secondary, 0px 0px 2px $secondary inset, 0px 0px 2px $secondary;
     }
   }
-  &:hover {
-    box-shadow: 0px 0px 25px rgba($secondary, 0.75);
-  }
-}
-.card-img {
-  // max-width: 100%;
-  // max-height: auto;
-  // object-fit: cover;
 }
