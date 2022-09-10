@@ -1,12 +1,201 @@
 ---
 title: BarMap
-layout: ./app/layout.ejs
+layout: ./app/layout-light.ejs
 engine: ejs
 current: storeDtl
 ---
 
-<section>
-  <div class="container pt-80 pb-80">
-    <h2>store detail</h2>
+<section class="text-base">
+  <!-- <section class="bg-img text-white"> -->
+
+  <div class="container pt-112 pb-80">
+    <div class="row g-0">
+      <img class="img-fluid col-12 col-md-7" src="./assets/images/store1.png" alt="store picture" />
+      <div class="mt-5 ps-md-5 col-12 col-md-5">
+        <h2>D Town by A Train</h2>
+
+        <ul class="d-flex justicy-content-start">
+          <li class="me-2">
+            <a class="d-block" href="#">
+              <!-- <a class="d-block text-white" href="#"> -->
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+              </svg>
+            </a>
+          </li>
+          <li class="me-2">
+            <a class="d-block" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                <path
+                  d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <li class="me-2">
+            <a href="d-block">
+              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                <path
+                  d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <p>電話: <a class="text-base link-decoration" href="tel:+02-23456787">02-23456787</a></p>
+          </li>
+          <li>
+            <p>營業時間: 18:00 - 12:00</p>
+          </li>
+          <li>
+            <p>地址: <a class="text-base link-decoration" href="https://goo.gl/maps/azrtMk6x3MkthSNp7" target="_blank" rel="noopener noreferrer">106台北市大安區忠孝東路四段49巷2號2樓</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="bg-base">
+    <div class="container mt-5 pb-80 pt-5 border-top border-transparent">
+      <div class="w-644 mx-auto">
+        <h3 class="mb-3 text-white">網友評論</h3>
+        <div class="d-flex justify-content-start mb-5">
+          <select class="form-select w-fit me-2 opacity-75" name="orderBy" id="orderBy">
+            <option value="" disabled selected>排序</option>
+            <option value="orderby-1">最相關</option>
+            <option value="orderby-2">最新</option>
+            <option value="orderby-3">評分最高</option>
+            <option value="orderby-4">評分最低</option>
+          </select>
+          <form action="#" method="post">
+            <input class="form-control opacity-75" type="text" name="commandSearch" id="commandSearch" placeholder="搜尋評論" />
+          </form>
+        </div>
+        <div class="mt-3">
+          <div class="card card-primary-transparent mb-5 m-0">
+            <div class="row g-0">
+              <div class="col-3 text-center">
+                <img class="img-square rounded-circle" src="./assets/images/user1.png" alt="userImg" />
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <div class="col-9">
+                <div class="card-body ps-3">
+                  <p>這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！...<a class="text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#commandModal1">more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-primary-transparent mb-5 m-0">
+            <div class="row g-0">
+              <div class="col-3 text-center">
+                <img class="img-square rounded-circle" src="./assets/images/user2.png" alt="userImg" />
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <div class="col-9">
+                <div class="card-body ps-3">
+                  <p>這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！...<a class="text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#commandModal2">more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card card-primary-transparent mb-5 m-0">
+            <div class="row g-0">
+              <div class="col-3 text-center">
+                <img class="img-square rounded-circle" src="./assets/images/user3.png" alt="userImg" />
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <div class="col-9">
+                <div class="card-body ps-3">
+                  <p>這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！...<a class="text-secondary" href="#" data-bs-toggle="modal" data-bs-target="#commandModal3">more</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="d-flex justify-content-center" aria-label="Pagination">
+          <ul class="pagination">
+            <li class="page-item bg-transparent">
+              <a href="#" class="page-link"><span class="material-icons"> chevron_left </span></a>
+            </li>
+            <li class="page-item"><a href="#" class="page-link">1</a></li>
+            <li class="page-item"><a href="#" class="page-link">2</a></li>
+            <li class="page-item"><a href="#" class="page-link">3</a></li>
+            <li class="page-item">
+              <a href="#" class="page-link"><span class="material-icons"> chevron_right </span></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <!-- 網友評論完整頁 -->
+      <div class="modal fade" id="commandModal1" tabindex="-1" aria-labelledby="commandModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-3 text-base">
+            <div class="modal-header justify-content-start">
+              <img class="img-square rounded-circle" src="./assets/images/user1.png" alt="userImg" />
+              <div class="d-flex flex-column ms-3">
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body lh-lg">
+              <p>
+                這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！美食部分我們點了「蒜香羅勒白酒蛤蜊義大利麵」、「辣味嫩煎牛排義大利麵」、薯條、雞翅，酒則點了「Sunday Morning」。
+                食物部分讓我很驚奇，本來我就對酒吧的主食不會抱有太多期望，沒想到好吃份量又足夠。雖然薯條不是我想要的松露薯條，但灑上去的香料還是讓人忍不住一口接一口，而且吃不完！酒的部分基底則是琴酒，因此口感酸甜帶點苦。整體來說我會願意再回訪，然後推薦給身邊的朋友
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="commandModal2" tabindex="-1" aria-labelledby="commandModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-3 text-base">
+            <div class="modal-header justify-content-start">
+              <img class="img-square rounded-circle" src="./assets/images/user2.png" alt="userImg" />
+              <div class="d-flex flex-column ms-3">
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body lh-lg">
+              <p>
+                這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！美食部分我們點了「蒜香羅勒白酒蛤蜊義大利麵」、「辣味嫩煎牛排義大利麵」、薯條、雞翅，酒則點了「Sunday Morning」。
+                食物部分讓我很驚奇，本來我就對酒吧的主食不會抱有太多期望，沒想到好吃份量又足夠。雖然薯條不是我想要的松露薯條，但灑上去的香料還是讓人忍不住一口接一口，而且吃不完！酒的部分基底則是琴酒，因此口感酸甜帶點苦。整體來說我會願意再回訪，然後推薦給身邊的朋友
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="commandModal3" tabindex="-1" aria-labelledby="commandModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content p-3 text-base">
+            <div class="modal-header justify-content-start">
+              <img class="img-square rounded-circle" src="./assets/images/user3.png" alt="userImg" />
+              <div class="d-flex flex-column ms-3">
+                <h4 class="mt-2">Ru Chen</h4>
+                <p class="m-0">50則評論</p>
+              </div>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body lh-lg">
+              <p>
+                這次來到了著名ABCD系列酒吧的「D」，食物跟酒我覺得比B還要棒！美食部分我們點了「蒜香羅勒白酒蛤蜊義大利麵」、「辣味嫩煎牛排義大利麵」、薯條、雞翅，酒則點了「Sunday Morning」。
+                食物部分讓我很驚奇，本來我就對酒吧的主食不會抱有太多期望，沒想到好吃份量又足夠。雖然薯條不是我想要的松露薯條，但灑上去的香料還是讓人忍不住一口接一口，而且吃不完！酒的部分基底則是琴酒，因此口感酸甜帶點苦。整體來說我會願意再回訪，然後推薦給身邊的朋友
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </section>

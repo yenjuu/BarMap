@@ -266,6 +266,7 @@ $spacers: (
   7:  $spacer * 2.5,
   8:  $spacer * 3,
   80: $spacer * 5,
+  112: $spacer * 7,
 ) !default;
 
 $negative-spacers: if($enable-negative-margins, negativify-map($spacers), null) !default;

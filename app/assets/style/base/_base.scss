@@ -15,4 +15,7 @@ caption {
 a {
   // color: $white !important;
   text-decoration: none;
+  &:hover{
+    color: $white;
+  }
 }

@@ -13,7 +13,12 @@
 .lh-40 {
   line-height: 80px !important;
 }
-
+.w-fit {
+  width: fit-content;
+}
+.w-40 {
+  max-width: 40px;
+}
 .w-558 {
   max-width: 558px;
 }
@@ -42,6 +47,21 @@
   max-width: fit-content;
   border-radius: 0px;
 }
+.img-square {
+  width: 80px;
+  height: 80px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.border-transparent {
+  border-color: rgba($border-color, 0.3) !important;
+}
+
+.link-decoration {
+  &:hover {
+    text-decoration: underline;
+  }
+}
 
 // ==================== RWD ====================
 @include media-breakpoint-up(xs) {
@@ -54,8 +74,14 @@
   }
 
   // position
+  .top-0 {
+    top: 0px;
+  }
   .top-8 {
     top: 8px;
+  }
+  .end-0 {
+    right: 0px;
   }
   .end-8 {
     right: 8px;
@@ -65,7 +91,7 @@
   .w-30 {
     width: 30%;
   }
-  .w-100{
+  .w-100 {
     width: 100% !important;
   }
 }
