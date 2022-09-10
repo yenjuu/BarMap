@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>BarMap</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" /> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/style/all.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
+      <div class="container">
+        <h1>
+          <a class="navbar-brand navbar-logo" href="index.html">BarMap</a>
+        </h1>
+        <button class="navbar-toggler text-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- FIXME: navbar 展開時增加底色 -->
+        <!-- FIXME: 縮到375的時候 header太長導致x軸? -->
+        <div class="collapse navbar-collapse justify-content-lg-end" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" aria-current="page" href="index.html">首頁</a>
+              <!-- <a class="nav-link active" aria-current="page" href="index.html">首頁</a> -->
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="suggest.html">酒吧推薦</a>
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="search.html">酒吧搜尋</a>
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="#">活動資訊</a>
+            </li>
+            <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
+              <a class="nav-link" href="#">調酒知識</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="position-relative"></div> -->
+      </div>
+    </nav>
+
+    
+<section class="bg-base pt-80 pb-80">
+  <div class="container text-center">
+    <h2 class="text-white">搜尋結果</h2>
+    <div class="d-flex mt-7 ms-3">
+      <p class="text-white">搜尋條件:</p>
+      <div class="ms-3">
+        <span class="badge rounded-pill bg-highlight">調酒</span>
+        <span class="badge rounded-pill bg-highlight">精釀啤酒</span>
+        <span class="badge rounded-pill bg-highlight">室內禁菸</span>
+        <span class="badge rounded-pill bg-highlight">下酒菜</span>
+        <span class="badge rounded-pill bg-highlight">創意調酒</span>
+      </div>
+    </div>
+    <div class="d-flex flex-wrap justify-content-center ms-m3 me-m3 pt-3 text-start">
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+        <div class="card card-secondary-transparent">
+          <a href="storeDtl.html">
+            <div class="card-header">
+              <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">D Town by A Train</h5>
+              <span class="badge bg-outline-primary rounded-0">營業中</span>
+              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="d-flex justify-content-center" aria-label="Pagination">
+    <ul class="pagination">
+      <li class="page-item bg-transparent">
+        <a href="#" class="page-link"><span class="material-icons"> chevron_left </span></a>
+      </li>
+      <li class="page-item"><a href="#" class="page-link">1</a></li>
+      <li class="page-item"><a href="#" class="page-link">2</a></li>
+      <li class="page-item"><a href="#" class="page-link">3</a></li>
+      <li class="page-item">
+        <a href="#" class="page-link"><span class="material-icons"> chevron_right </span></a>
+      </li>
+    </ul>
+  </nav>
+</section>
+
+
+    <footer class="footer bg-secondary-dark text-white pt-6 pb-4 text-center">
+      <div class="container w-558">
+        <ul class="d-flex justify-content-center">
+          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="index.html">HOME</a></li>
+          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="#">SEARCH</a></li>
+          <li><a class="nav-link p-1 ps-2 pe-2" href="#">LOGOUT</a></li>
+        </ul>
+        <div class="d-flex justify-content-center align-items-center mt-6 mb-80">
+          <span class="material-icons material-icons-outlined fs-1"> email </span>
+          <input class="form-control opacity-75 ms-2 me-2" type="email" name="mail" id="mail" placeholder="email" aria-label="mail" aria-describedby="mail" />
+          <input class="btn btn-primary" type="submit" value="Send" />
+        </div>
+        <p>Copyright © 2022 Bar Map. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+</html>
