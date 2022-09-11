@@ -36,7 +36,7 @@
               <a class="nav-link" href="search.html">酒吧搜尋</a>
             </li>
             <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
-              <a class="nav-link" href="#">活動資訊</a>
+              <a class="nav-link" href="event.html">活動資訊</a>
             </li>
             <li class="nav-item pt-3 pb-3 pt-lg-0 pb-lg-0 ml-lg-6">
               <a class="nav-link" href="#">調酒知識</a>
@@ -48,148 +48,432 @@
     </nav>
 
     
-<section class="bg-img pt-80 pb-80">
-  <div class="container">
-    <div>
-      <h2 class="text-white text-center">熱門推薦</h2>
-      <!-- swiper -->
-      <div class="swiper pt-7 pb-7 position-relative">
-        <div class="swiper-wrapper">
-          <div class="card card-primary-transparent swiper-slide">
-            <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">D Town by A Train</h5>
-              <!-- <div class="d-flex align-items-center mb-4"> -->
-              <!-- <fieldset class="rating">
-                <input type="radio" id="star5" name="rating" value="5" /><label class="full" for="star5" title="Awesome - 5 stars"></label> <input type="radio" id="star4half" name="rating" value="4 and a half" /><label class="half" for="star4half" title="Pretty good - 4.5 stars"></label>
-                <input type="radio" id="star4" name="rating" value="4" /><label class="full" for="star4" title="Pretty good - 4 stars"></label> <input type="radio" id="star3half" name="rating" value="3 and a half" /><label class="half" for="star3half" title="Meh - 3.5 stars"></label>
-                <input type="radio" id="star3" name="rating" value="3" /><label class="full" for="star3" title="Meh - 3 stars"></label> <input type="radio" id="star2half" name="rating" value="2 and a half" /><label class="half" for="star2half" title="Kinda bad - 2.5 stars"></label>
-                <input type="radio" id="star2" name="rating" value="2" /><label class="full" for="star2" title="Kinda bad - 2 stars"></label> <input type="radio" id="star1half" name="rating" value="1 and a half" /><label class="half" for="star1half" title="Meh - 1.5 stars"></label>
-                <input t ype="radio" id="star1" name="rating" value="1" /><label class="full" for="star1" title="Sucks big time - 1 star"></label> <input type="radio" id="starhalf" name="rating" value="half" /><label class="half" for="starhalf" title="Sucks big time - 0.5 stars"></label>
-              </fieldset> -->
-              <span class="badge bg-outline-primary rounded-0">營業中</span>
-              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
-            </div>
-          </div>
-          <div class="card card-secondary-transparent swiper-slide">
-            <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">D Town by A Train</h5>
-              <span class="badge bg-outline-primary rounded-0">營業中</span>
-              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
-            </div>
-          </div>
-          <div class="card card-primary-transparent swiper-slide">
-            <img src="./assets/images/store1.png" class="card-img-top" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">D Town by A Train</h5>
-              <span class="badge bg-outline-primary rounded-0">營業中</span>
-              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
-            </div>
-          </div>
-          <div class="card card-secondary-transparent swiper-slide">
-            <img src="./assets/images/store1.png" class="card-img-top1" alt="..." />
-            <div class="card-body">
-              <h5 class="card-title">D Town by A Train</h5>
-              <span class="badge bg-outline-primary rounded-0">營業中</span>
-              <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination position-absolute bottom-0"></div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-      </div>
-    </div>
-  </div>
-  <div class="container w-644">
-    <h2 class="text-white text-center mt-80 mb-7">最近活動</h2>
-    <ul>
-      <li class="mb-64">
-        <div class="card card-primary">
-          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card-header">
-                <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1">D Town by A Train</h5>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <p>活動主題: XXXX聯名特調</p>
-                  </li>
-                  <li>
-                    <p>活動時間: 今日起至 12/31</p>
-                  </li>
-                  <li>
-                    <p>活動內容: 來店消費 XXXX聯名特調2杯，就贈電影特映票2張</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+<section class="bg-img pt-80 pb-80 row">
+  <div class="col-2 text-white text-center pt-3 d-none d-md-block">
+    <ul class="" id="list-tab" role="tablist">
+      <li class="mt-2 mb-2">
+        <a class="list-link pt-3 pb-3 active" id="tab-list1" data-bs-toggle="list" href="#list1" role="tab" aria-controls="list1">熱門推薦</a>
       </li>
-      <li class="mb-64">
-        <div class="card card-primary position-relative">
-          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card-header">
-                <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1">D Town by A Train</h5>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <p>活動主題: XXXX聯名特調</p>
-                  </li>
-                  <li>
-                    <p>活動時間: 今日起至 12/31</p>
-                  </li>
-                  <li>
-                    <p>活動內容: 來店消費 XXXX聯名特調2杯，就贈電影特映票2張</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <li class="mt-2 mb-2">
+        <a class="list-link pt-3 pb-3" id="tab-list2" data-bs-toggle="list" href="#list2" role="tab" aria-controls="list2">附近推薦</a>
       </li>
-      <li class="mb-64">
-        <div class="card card-primary position-relative">
-          <span class="badge d-block bg-highlight position-absolute top-16 end-16">NEW</span>
-          <div class="row">
-            <div class="col-md-4">
-              <div class="card-header">
-                <img class="card-img" src="./assets/images/store2.png" alt="" />
-                <h5 class="mt-1">D Town by A Train</h5>
-              </div>
-            </div>
-            <div class="col-md-8">
-              <div class="card-body">
-                <ul>
-                  <li>
-                    <p>活動主題: XXXX聯名特調</p>
-                  </li>
-                  <li>
-                    <p>活動時間: 今日起至 12/31</p>
-                  </li>
-                  <li>
-                    <p>活動內容: 來店消費 XXXX聯名特調2杯，就贈電影特映票2張</p>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
+      <li class="mt-2 mb-2">
+        <a class="list-link pt-3 pb-3" id="tab-list2" data-bs-toggle="list" href="#list3" role="tab" aria-controls="list3">特色酒吧</a>
       </li>
     </ul>
+  </div>
+  <div class="col-12 col-md-8">
+    <div class="container">
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list1" role="tabpanel" aria-labelledby="tab-list1">
+          <h2 class="text-white text-center mt-4 mb-5">熱門推薦</h2>
+          <div class="d-flex flex-wrap justify-content-center ms-m3 me-m3 pt-3 text-start">
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/store1.png" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">D Town by A Train</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar2.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">OriginBAR 初</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar6.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Draft Land</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar4.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">掌門精釀啤酒</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar7.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">心味酒肴居酒屋</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar8.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">墨子 I MOZI-東區酒吧</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar9.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Unknown Lounge bar</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar10.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">BAR AFTER NINE 九後餐酒館</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar3.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">AQUA Lounge</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list2" role="tabpanel" aria-labelledby="tab-list2">
+          <h2 class="text-white text-center mt-4 mb-5">附近推薦</h2>
+          <div class="d-flex flex-wrap justify-content-center ms-m3 me-m3 pt-3 text-start">
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/store1.png" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">D Town by A Train</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar2.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">OriginBAR 初</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar6.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Draft Land</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar4.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">掌門精釀啤酒</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar7.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">心味酒肴居酒屋</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar8.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">墨子 I MOZI-東區酒吧</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar9.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Unknown Lounge bar</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar10.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">BAR AFTER NINE 九後餐酒館</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar3.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">AQUA Lounge</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="list3" role="tabpanel" aria-labelledby="tab-list3">
+          <h2 class="text-white text-center mt-4 mb-5">特色酒吧</h2>
+          <div class="d-flex flex-wrap justify-content-center ms-m3 me-m3 pt-3 text-start">
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/store1.png" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">D Town by A Train</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar2.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">OriginBAR 初</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar6.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Draft Land</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar4.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">掌門精釀啤酒</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar7.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">心味酒肴居酒屋</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar8.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">墨子 I MOZI-東區酒吧</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar9.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Unknown Lounge bar</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar10.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">BAR AFTER NINE 九後餐酒館</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="mb-7 ms-3 me-3 w-100 w-md-30">
+              <div class="card card-secondary-transparent">
+                <a href="storeDtl.html">
+                  <div class="card-header">
+                    <img src="./assets/images/bar3.jpg" class="card-img-top h-164 img-fit" alt="..." />
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">AQUA Lounge</h5>
+                    <span class="badge bg-outline-primary rounded-0">營業中</span>
+                    <div class="card-text fs-6 mt-3">結束營業時間: 14:00</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <nav class="d-flex justify-content-center" aria-label="Pagination">
+        <ul class="pagination">
+          <li class="page-item bg-transparent">
+            <a href="#" class="page-link"><span class="material-icons"> chevron_left </span></a>
+          </li>
+          <li class="page-item"><a href="#" class="page-link">1</a></li>
+          <li class="page-item"><a href="#" class="page-link">2</a></li>
+          <li class="page-item"><a href="#" class="page-link">3</a></li>
+          <li class="page-item">
+            <a href="#" class="page-link"><span class="material-icons"> chevron_right </span></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </div>
 </section>
 
@@ -198,7 +482,7 @@
       <div class="container w-558">
         <ul class="d-flex justify-content-center">
           <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="index.html">HOME</a></li>
-          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="#">SEARCH</a></li>
+          <li class="pe-2 me-2 border-end"><a class="nav-link p-1 ps-2 pe-2" href="index.html">SEARCH</a></li>
           <li><a class="nav-link p-1 ps-2 pe-2" href="#">LOGOUT</a></li>
         </ul>
         <div class="d-flex justify-content-center align-items-center mt-6 mb-80">
