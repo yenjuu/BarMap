@@ -15,7 +15,7 @@ $(document).on("scroll", function () {
 //   $(".navbar-collapse").addClass("bg-transparent");
 // });
 
-var swiper = new Swiper(".swiper", {
+var cardSwiper = new Swiper(".swiper-card", {
   slidesPerView: 4,
   spaceBetween: 24,
   // grabCursor: true,
@@ -49,5 +49,16 @@ var swiper = new Swiper(".swiper", {
       slidesPerView: 4,
       spaceBetween: 24,
     },
+  },
+});
+
+var fluidSwiper = new Swiper(".swiper-fluid", {
+  pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
+  },
+  loop: true,
+  autoplay: {
+    delay: 2500,
   },
 });

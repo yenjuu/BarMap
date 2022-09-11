@@ -42,6 +42,15 @@
       box-shadow: 0px 0px 25px rgba($primary, 0.75), 0px 0px 5px $primary inset, 0px 0px 3px $primary inset, 0px 0px 3px $primary, 0px 0px 2px $primary inset, 0px 0px 2px $primary;
     }
   }
+  &-border {
+    color: $base;
+    background-color: $primary;
+    border: 2px solid $primary;
+    &:hover {
+      // box-shadow: 0px 0px 25px rgba($base, 0.75), 0px 0px 5px $primary inset, 0px 0px 3px $primary inset, 0px 0px 3px $base, 0px 0px 2px $primary inset, 0px 0px 2px $primary;
+      box-shadow: 0px 0px 25px rgba($primary, 0.75), 0px 0px 5px $primary inset, 0px 0px 3px $primary inset, 0px 0px 3px $primary, 0px 0px 2px $primary inset, 0px 0px 2px $primary;
+    }
+  }
 }
 .card-secondary {
   background-color: rgba($secondary, 0.8);
@@ -55,5 +64,11 @@
     &:hover {
       box-shadow: 0px 0px 25px rgba($secondary, 0.75), 0px 0px 5px $secondary inset, 0px 0px 3px $secondary inset, 0px 0px 3px $secondary, 0px 0px 2px $secondary inset, 0px 0px 2px $secondary;
     }
+  }
+}
+.card-secondary-dark {
+  background-color: rgba($secondary-dark, 0.9);
+  &:hover {
+    box-shadow: 0px 0px 25px $secondary-dark;
   }
 }

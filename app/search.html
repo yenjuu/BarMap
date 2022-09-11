@@ -10,14 +10,16 @@ current: search
     <h2 class="fs-1 text-primary">你最佳的酒吧搜尋器</h2>
     <form action="post">
       <div class="row pe-3 mb-5">
-        <div class="col-10">
+        <div class="col-8 ms-auto">
           <input class="form-control opacity-75" type="text" name="barName" id="barName" placeholder="請輸入店名" />
         </div>
         <!-- TODO: 文字換成icon? -->
-        <button class="col-2 btn btn-primary" type="submit">search</button>
+        <a class="col-1 me-auto btn btn-primary btn-sm" type="submit" href="searchResult.html">
+          <span class="material-icons material-icons-rounded align-middle"> search </span>
+        </a>
       </div>
       <div class="row">
-        <div class="col-4 text-start">
+        <div class="col-3 ms-auto text-start">
           <label class="fs-6 text-white" for="place"> 地點 </label>
           <select class="form-select opacity-75" name="place" id="place">
             <option value="taipei">台北</option>
@@ -25,7 +27,7 @@ current: search
             <option value="taipei">台南</option>
           </select>
         </div>
-        <div class="col-4 text-start">
+        <div class="col-3 text-start">
           <label class="fs-6 text-white" for="suggestScore"> 推薦指數 </label>
           <select class="form-select opacity-75" name="suggestScore" id="suggestScore">
             <option value="5">5.0</option>
@@ -35,7 +37,7 @@ current: search
             <option value="1">1.0</option>
           </select>
         </div>
-        <div class="col-4 text-start">
+        <div class="col-3 me-auto text-start">
           <label class="fs-6 text-white" for="priceScore"> 價格親切 </label>
           <select class="form-select opacity-75" name="priceScore" id="priceScore">
             <option value="5">5.0</option>

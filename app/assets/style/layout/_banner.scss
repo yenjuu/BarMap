@@ -1,12 +1,24 @@
-.hero-banner{
+.hero-banner {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/hero-banner.png?raw=true");
   background-size: cover;
   top: 0px;
   height: 100vh;
 }
-.banner{
+.banner {
   background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/banner.png?raw=true");
   background-size: cover;
   height: 100vh;
   // bottom: 0px;
 }
+.banner-dark {
+  background-image: url("https://github.com/ariel7234/BarMap/blob/main/app/assets/images/banner-dark.jpg?raw=true");
+  background-size: cover;
+  background-position: 60% 40%;
+  height: 50vh;
+}
+
+
+// @include media-breakpoint-up(xs) {
+//   .banner-dark {
+//   }
+// }

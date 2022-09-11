@@ -1,12 +1,92 @@
 ---
 title: BarMap
-layout: ./app/layout.ejs
+layout: ./app/layout-light.ejs
 engine: ejs
 current: eventDtl
 ---
 
-<section>
-  <div class="container pt-80 pb-80">
-    <h2>event detail</h2>
+<section class="text-base">
+  <!-- <section class="bg-img text-white"> -->
+
+  <div class="container pt-80 pt-md-112 pb-80">
+    <div class="">
+      <div class="swiper swiper-fluid h-500 pb-8 position-relative">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide position-relative">
+            <img class="img-center position-absolute top-100" src="./assets/images/wine4.jpg" alt="store picture" />
+          </div>
+          <div class="swiper-slide">
+            <img class="img-center" src="./assets/images/bar1.jpg" alt="store picture" />
+          </div>
+          <div class="swiper-slide">
+            <img class="img-center" src="./assets/images/bar2.jpg" alt="store picture" />
+          </div>
+          <div class="swiper-slide">
+            <img class="img-center" src="./assets/images/bar8.jpg" alt="store picture" />
+          </div>
+          <div class="swiper-slide">
+            <img class="img-center" src="./assets/images/bar4.jpg" alt="store picture" />
+          </div>
+        </div>
+        <div class="swiper-pagination position-absolute bottom-0"></div>
+      </div>
+      <div class="mt-5 ps-md-5">
+        <div class="d-md-flex justify-content-md-between">
+          <h5 class="fw-bolder">D Town by A Train</h5>
+          <ul class="d-flex justicy-content-start">
+            <li class="me-2">
+              <a class="d-block" href="#">
+                <!-- <a class="d-block text-white" href="#"> -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                  <path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z" />
+                </svg>
+              </a>
+            </li>
+            <li class="me-2">
+              <a class="d-block" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                  <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                  <path
+                    d="M224,202.66A53.34,53.34,0,1,0,277.36,256,53.38,53.38,0,0,0,224,202.66Zm124.71-41a54,54,0,0,0-30.41-30.41c-21-8.29-71-6.43-94.3-6.43s-73.25-1.93-94.31,6.43a54,54,0,0,0-30.41,30.41c-8.28,21-6.43,71.05-6.43,94.33S91,329.26,99.32,350.33a54,54,0,0,0,30.41,30.41c21,8.29,71,6.43,94.31,6.43s73.24,1.93,94.3-6.43a54,54,0,0,0,30.41-30.41c8.35-21,6.43-71.05,6.43-94.33S357.1,182.74,348.75,161.67ZM224,338a82,82,0,1,1,82-82A81.9,81.9,0,0,1,224,338Zm85.38-148.3a19.14,19.14,0,1,1,19.13-19.14A19.1,19.1,0,0,1,309.42,189.74ZM400,32H48A48,48,0,0,0,0,80V432a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V80A48,48,0,0,0,400,32ZM382.88,322c-1.29,25.63-7.14,48.34-25.85,67s-41.4,24.63-67,25.85c-26.41,1.49-105.59,1.49-132,0-25.63-1.29-48.26-7.15-67-25.85s-24.63-41.42-25.85-67c-1.49-26.42-1.49-105.61,0-132,1.29-25.63,7.07-48.34,25.85-67s41.47-24.56,67-25.78c26.41-1.49,105.59-1.49,132,0,25.63,1.29,48.33,7.15,67,25.85s24.63,41.42,25.85,67.05C384.37,216.44,384.37,295.56,382.88,322Z"
+                  />
+                </svg>
+              </a>
+            </li>
+            <li class="me-2">
+              <a href="d-block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 448 512" stroke="currentColor">
+                  <!-- Font Awesome Pro 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) -->
+                  <path
+                    d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h352a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48zm-16.39 307.37l-15 65A15 15 0 0 1 354 416C194 416 64 286.29 64 126a15.7 15.7 0 0 1 11.63-14.61l65-15A18.23 18.23 0 0 1 144 96a16.27 16.27 0 0 1 13.79 9.09l30 70A17.9 17.9 0 0 1 189 181a17 17 0 0 1-5.5 11.61l-37.89 31a231.91 231.91 0 0 0 110.78 110.78l31-37.89A17 17 0 0 1 299 291a17.85 17.85 0 0 1 5.91 1.21l70 30A16.25 16.25 0 0 1 384 336a17.41 17.41 0 0 1-.39 3.37z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- <ul>
+          <li>
+            <p>電話: <a class="text-base link-decoration" href="tel:+02-23456787">02-23456787</a></p>
+          </li>
+          <li>
+            <p>營業時間: 18:00 - 12:00</p>
+          </li>
+          <li>
+            <p>地址: <a class="text-base link-decoration" href="https://goo.gl/maps/azrtMk6x3MkthSNp7" target="_blank" rel="noopener noreferrer">106台北市大安區忠孝東路四段49巷2號2樓</a></p>
+          </li>
+        </ul> -->
+        <h2>XXXX聯名特調</h2>
+        <ul>
+          <li>
+            <h3>活動時間</h3>
+            <p>今日起至12/31</p>
+          </li>
+          <li>
+            <h3>活動內容</h3>
+            <p>介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹 介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹介紹</p>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
